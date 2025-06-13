@@ -1,0 +1,460 @@
+-about
+-age
+-among
+-all
+-an
+-and
+-are
+-around
+-be
+-bit
+-could
+-couldn
+-didn
+-don
+-for
+-from
+-has
+-he
+-into
+-is
+-it
+-most
+-my
+-of
+-off
+-on
+-over
+-soon
+-than
+-that
+-them
+-there
+-they
+-this
+-to
+-was
+-we
+-what
+-when
+-where
+-why
+-with
+-within
+-would
+-wouldn
+-you
+-your
+
+-bar
+-beautifully
+-crisp
+-crumb
+-crumb*
+-eat
+-eat*
+-fill
+-food
+-full
+-good
+-peanut
+-peanut*
+-snack
+-snack*
+-taste
+-taste*
+-tasty
+-treat
+-treat*
+-*treat*
+
+amazing -> yumazing
+america -> chocomerica
+another -> anuther
+anytime -> candytime,snacktime
+apart -> abart
+back -> snack
+bear -> bar
+beautiful -> beautifull
+been -> beenut
+best -> tastiest
+body -> candy
+bunch -> crunch
+but -> barut
+by -> bite
+cage -> chocagelate
+cages -> chocagelates
+car -> caramel
+catchy -> catchewy
+certainly -> sweetainly
+champ -> chomp
+choice -> chocoice,snackoice
+cities -> peanutopolises
+city -> peanutopolis
+come -> crumb
+comin -> crumbin
+coming -> crumbing
+count -> chownt
+county -> chownty
+create -> crunch
+created -> crunched
+crush -> crunch
+cry -> crave
+crying -> craving
+dead -> fed
+die -> satisfy
+do -> chew
+dream -> cream
+dying -> satisfying
+down -> chown
+end -> endlectable
+ever -> flavor
+face -> feast
+fact -> satisfact
+fame -> flave
+famous -> flavous
+far -> bar
+favor -> flavor
+feel -> fill
+felt -> filled
+fire -> feast
+full -> mouthful
+funny -> yummy
+get -> nouget
+go -> chogolate
+greet -> treat
+have -> havisfaction
+her -> flaveher
+help -> melt
+hill -> fill
+him -> crunchim
+hope -> chochopelate
+houston -> chewston
+howdy -> chowdy
+huey -> chewy
+humor -> chewmor
+hunch -> crunch
+important -> impeanutant
+importance -> impeanutance
+jack -> snack
+junk -> chunk
+kid -> kidamel
+kids -> kidamels
+kill -> hungercide
+kills -> hungercides
+know -> knougat
+lewis -> lewicious,chewis
+light -> bite
+lights -> bites
+lose -> chews
+make -> caramakel
+mark -> melt
+may -> caramayel
+meet -> treat
+met -> melt
+might -> bite
+much -> munch
+must -> nuts
+new -> chew
+ninety -> nutty
+not -> nut
+nothing -> nuthing
+now -> chow
+nuclear -> chewclear
+number -> hunger
+office -> offeast
+old -> chocold
+other -> flavother
+our -> chower
+out -> chocout
+outshoot -> outchew
+phil -> fill
+power -> flavor
+put -> nut
+putty -> nutty
+right -> bite
+rude -> chewed
+rudely -> chewedly
+save -> flave
+say -> saytisfy
+seen -> seenougat
+serve -> flaserve
+should -> shgood
+shouldn -> shgoodn
+sight -> bite
+sights -> bites
+sing -> snack
+singer -> snacker
+single -> singlelicious
+singles -> snackles
+six -> snax
+sixty -> snaxty
+snake -> snack
+so -> soweet
+speak -> snack
+spill -> sfill
+start -> starve
+state -> taste
+statue -> stachew
+still -> sfill
+storm -> snackstorm
+street -> streat
+suck -> snack
+take -> takesty
+teacher -> teachewer
+test -> taste
+tests -> tastes
+that -> thatisfaction
+the -> thelicious
+their -> smootheir
+think -> chomptemplate
+though -> smoothough
+three -> treat
+tight -> bite
+tights -> bites
+time -> snacktime
+times -> snacktimes
+too -> chew
+tongue -> tonguegry
+town -> chown
+two -> chew
+true -> chew
+truth -> chewth
+united -> chewnited
+use -> chews
+view -> chew
+wake -> snack
+wave -> crave
+waving -> craving
+war -> whunger
+we -> chewy
+welcome -> welcrumb
+wet -> whet
+whitney -> whitnut
+who -> chew
+will -> fill
+wonder -> hunger
+world -> chocoworld
+write -> bite
+writer -> biter
+written -> bitten
+yes -> yums
+yo -> yum
+young -> yum
+
+champ* -> chomp*
+compe* -> chompe*
+compl* -> chompl*
+crush* -> crunch*
+dream* -> cream*
+escap* -> snackscap*
+favorit* -> flavorit*
+great* -> treat*
+greet* -> treat*
+lighte* -> bite*
+lighti* -> biti*
+mansio* -> munchio*
+necess* -> nesweet*
+other* -> flavother*
+outshoot* -> outchew*
+power* -> flavor*
+recei* -> treatcei*
+rude* -> chewed*
+sighte* -> bite*
+sighti* -> biti*
+speak* -> snack*
+start*,-starth* -> starv*
+street* -> streat*
+tighte* -> bite*
+tighti* -> biti*
+treas* -> treats*
+wonder* -> hunger*
+under* -> hunger*
+
+*ibil* -> *ifill*
+*illing,-**illing -> filling
+*trude -> *chewed
+*writer -> *biter
+
+bett* -> treat*
+choo* -> chew*
+chop* -> chomp*
+city* -> peanutopolis*
+comp* -> yump*
+cont* -> crunch*
+ever* -> flavor*
+fact* -> satisfact*
+feel* -> fill*
+godd* -> chocod*
+help* -> melt*
+hist* -> tast*
+hyst* -> tast*
+jack* -> snack*
+meet* -> treat*
+musi* -> chewsi*
+oppo* -> choco*
+peop* -> peanup*
+proj* -> chompj*,baroj*
+regu* -> nougu*
+reme* -> treatme*
+repo* -> treatpo*
+shoo* -> chew*
+sena* -> snacka*
+some* -> yum*
+sunn* -> yumm*
+ship* -> chomp*
+state* -> taste*
+suck* -> snack*
+term* -> treatm*
+terr* -> treat*
+test* -> tast*
+vacc* -> snackc*
+will* -> fill*
+
+*dure -> *chewer
+*face -> *feast
+*feat -> *feast
+*fuse -> *chews
+*lish -> *licious
+*mary -> *bary
+*nent -> *nut
+*nito -> *nuto
+*nity -> *nutty
+*tual -> *chewal
+*tude -> *chewed
+*ture -> *chewer
+*view -> *chew
+
+adv* -> snackv*
+al-* -> caramal-*
+all* -> full*
+alm* -> fillm*
+alr* -> caramalr*
+any* -> candy*
+app* -> chomp*
+aqu* -> snaqu*
+arg* -> barg*
+aug* -> chocog*
+ave* -> flave*
+bom* -> delectabom*,barom*
+be**,-bea* -> bar**
+chu* -> snacku*
+dis* -> feast*
+dog* -> noug*
+eco* -> snacko*
+fug* -> noug*
+ind* -> indulg*
+inn* -> indulg*
+god* -> chocod*
+hel* -> caramel*
+hun* -> yum*
+int*,-inth* -> inut*
+mag* -> noug*
+mar* -> bar*
+mem* -> yum*
+mil* -> caramil*
+neg* -> noug*
+new* -> chew*
+not* -> nut*
+our* -> chower*
+par* -> bar*
+per*,-perf* -> bar*
+pre*,-press,-press* -> bar*
+qui* -> chewi*
+rea* -> hungrea*
+rel* -> caramel*
+ret* -> treat*
+rev* -> flav*
+rur* -> hungr*
+sav* -> snack*
+sch* -> snack*
+sec* -> snack*
+sev* -> sweetv*
+sou* -> chow*
+sun* -> yum*
+uni* -> chewni*
+use* -> chews*
+van* -> flavan*
+voc* -> choc*
+wak* -> snack*
+
+*cal -> *caramel
+*car -> *caramel
+*eam -> *eyum
+*eet -> *eat
+*net -> *nut
+*nue -> *nut,*nougat
+*ock -> *ockolate
+*ous -> *nuts
+*uck -> *uckolate
+*use,-*ause -> *chews
+
+ab* -> caramab*
+ac* -> snack*
+ag* -> snack*
+am* -> nougam*,yum*
+ag* -> snack*
+al* -> fill*,caramal*
+ar*,-arf* -> bar*,nougar*
+at* -> nougat*
+aw* -> chow*
+ax* -> snax*
+be* -> delectabe*
+cl* -> chocl*
+co* -> choco*
+cr* -> hungr*
+de* -> de*licious
+el* -> caramel*
+eu* -> chew*
+ew* -> chew*
+ex* -> eats*,snax*
+gr* -> hungr*
+hm* -> mm*
+in* -> indulg*
+li* -> carameli*,fulli*
+ma* -> caramela*
+or* -> flavor*
+pr* -> bar*
+qu* -> snaqu*
+ra* -> hungera*
+sn* -> satisn*
+sp* -> satisp*
+st*,-stea* -> feast*
+tr* -> chewr*
+un* -> nut*
+ut* -> nut*
+wa* -> chewa*
+we* -> chewe*
+
+*is -> *eats,*isfaction
+
+ph* -> satisph*
+phill* -> fill*
+p* -> chomp*
+
+*an -> *anut
+*at -> *atisfaction
+*er -> *erlicious
+*et -> *etisfaction
+*il -> *ilicious
+*on -> *onougat
+*ox -> *oxolate
+*nt -> *nut
+*st -> *stisfaction
+
+b* -> delectab*
+f* -> satisf*
+k*,-kn* -> snack*
+l* -> caramel*,chocol*
+o* -> choco*
+t*,-th* -> nougat*
+w* -> chew*
+
+*rill* -> *rfill*
+
+*nt*,-*nth* -> *nut*
+*tw* -> *tchew*
+
+*able -> *alectable
+
+*p -> *peanut

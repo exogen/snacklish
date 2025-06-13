@@ -1,0 +1,27 @@
+{
+  "name": "snacklish",
+  "version": "1.0.0",
+  "description": "Translator from English to Snacklish",
+  "author": "Brian Beck <exogen@gmail.com>",
+  "license": "MIT",
+  "keywords": [],
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev demo",
+    "build": "npm run build:pages",
+    "build:pages": "next build demo && touch docs/.nojekyll"
+  },
+  "dependencies": {
+    "cromulence": "^0.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.1.8",
+    "next": "^15.3.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tsx": "^4.20.1",
+    "typescript": "^5.8.3"
+  }
+}

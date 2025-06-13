@@ -1,0 +1,113 @@
+.Bar {
+  position: relative;
+  display: inline-block;
+  padding: 0.08em 0.22em;
+  color: var(--blue);
+  font-family: var(--snickers-font);
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  transform: skewX(0deg);
+  text-shadow: -0.015em 0 0 var(--white), -0.03em 0 0 var(--blue);
+  white-space: nowrap;
+}
+
+.Bar::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  background: white;
+  border: 0.1em solid var(--red);
+  border-top-left-radius: 0.25em;
+  border-bottom-right-radius: 0.25em;
+  transform: skewX(-17deg);
+  content: "";
+  z-index: -1;
+}
+
+.Translator {
+  display: block;
+  width: 100%;
+}
+
+.Translator header {
+  text-align: center;
+}
+
+.Title {
+  display: inline-block;
+  position: relative;
+  padding: 20px 20px 36px 20px;
+}
+
+.Title h1 {
+  font-family: var(--snickers-font);
+  font-size: 64px;
+  line-height: 1;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Title h2 {
+  position: absolute;
+  display: inline-block;
+  right: 15%;
+  top: 64.5%;
+  padding: 0.07em 0.14em;
+  font-family: var(--bebas-neue-font);
+  border-radius: 0.07em;
+  font-size: 26px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  color: var(--white);
+  letter-spacing: 0.02em;
+  transform: skewX(-17deg);
+  background: var(--brown);
+}
+
+.Texts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.Input,
+.Output {
+  padding: 20px;
+}
+
+.InputText {
+  display: block;
+  width: 100%;
+  min-height: 100%;
+  background: rgb(110, 68, 42);
+  color: var(--white);
+  font-family: var(--roboto-condensed-font);
+  font-weight: 500;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 36px;
+  border: 3px solid rgb(161, 110, 79);
+  padding: 10px 12px;
+}
+
+.InputText:focus {
+  outline: 0;
+  border-color: var(--caramel);
+}
+
+.OutputText {
+  display: block;
+  white-space: pre-wrap;
+  font-size: 32px;
+  line-height: 36px;
+  padding: 0.2em;
+  overflow: auto;
+}
+
+.OutputText .Bar {
+  margin: 0.2em;
+}
