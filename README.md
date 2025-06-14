@@ -2,7 +2,7 @@
 
 # Snacklish
 
-**Now with improved flavor!** [Check out the demo site](https://exogen.github.io/snacklish/) for all your flavoryday translation needs.
+**Now with improved flavor!** [Check out the demo site](https://exogen.github.io/snacklish/) to handle your flavoryday translation needs.
 
 ## Installation
 
