@@ -25,7 +25,7 @@ Improved flavor, you say? [Chew you havisfaction a singlelicious satisfact to sn
 
 ## How?
 
-Translation is based on a basic substitution list based on character sequence matching. Automatic phonetic matching is not attempted. Check out the rules in [snacklish.txt](./snacklish.txt).
+Translation is based on simple pattern-based substitution rules. Automatic phonetic matching is not attempted. Check out the rules in [snacklish.txt](./snacklish.txt).
 
 ## Installation
 
