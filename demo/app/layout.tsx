@@ -47,8 +47,8 @@ export default function RootLayout({
         <main>{children}</main>
         <footer>
           <p>
-            No affiliation with Snickers, Mars Inc., or TBWA NY. Read about the
-            original flavor{" "}
+            Fan project. Not affiliated with Snickers, Mars Inc., or TBWA NY.
+            Read about the original flavor{" "}
             <a
               href="https://www.thiagozanato.com/snickers-snacklish"
               target="_blank"

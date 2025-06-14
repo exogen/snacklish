@@ -61,6 +61,8 @@
 -peanut*
 -snack
 -snack*
+-sweet
+-sweet*
 -taste
 -taste*
 -tasty
@@ -108,6 +110,7 @@ dream -> cream
 dying -> satisfying
 down -> chown
 end -> endlectable
+et -> eat
 ever -> flavor
 face -> feast
 fact -> satisfact
