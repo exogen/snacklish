@@ -102,7 +102,7 @@ rulesToFunction(rules: RuleSet): (token: string) => string
 
 ### tokenize
 
-Split a text document into tokens using the default settings.
+Split a text document into tokens using the default tokenizer.
 
 ```ts
 tokenize(text: string): string[]
