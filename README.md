@@ -111,6 +111,32 @@ Split a text document into tokens using the default tokenizer.
 tokenize(text: string): string[]
 ```
 
+### Probability Functions
+
+To customize the frequency of substitutions, you may pass a custom “probability
+function.” The function will be passed the original token, and must return a
+number. If the result of `Math.random()` is less than the number, the token is
+replaced. So, for example, 1 will always substitute and 0 will never substitute.
+
+The following exports are included with the library to create probability
+functions.
+
+#### getZeroProbabilityFunction
+
+Never substitute.
+
+#### getKindaProbabilityFunction
+
+Substitute sometimes.
+
+#### getNormalProbabilityFunction
+
+Substitute a little more.
+
+#### getExtremeProbabilityFunction
+
+Always substitute.
+
 ## Disclaimer
 
 This is a fan project and has no affiliation with Snickers, Mars Inc., or TBWA
