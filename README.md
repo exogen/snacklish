@@ -2,7 +2,11 @@
 
 # Snacklish
 
-**Now with improved flavor!** [Check out the demo site](https://exogen.github.io/snacklish/) to handle your flavoryday translation needs.
+**Now with improved flavor!**
+
+“Chew you havisfaction a singlelicious satisfact to snack that up?”
+
+[Check out the demo site](https://exogen.github.io/snacklish/) to handle your flavoryday translation needs.
 
 ## Usage
 
