@@ -56,7 +56,7 @@ be used with [rulesToFunction](#rulesToFunction).
 loadRuleString(): string
 ```
 
-Load the default Snacklish document as a string from [./snacklish.txt](snacklish.txt).
+Load the default Snacklish document as a string from [snacklish.txt](./snacklish.txt).
 
 ### parseRules
 
