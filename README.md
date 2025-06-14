@@ -89,4 +89,6 @@ tokenize(text: string): string[]
 ## Disclaimer
 
 This is a fan project, and has no affiliation with Snickers, Mars Inc., or TBWA
-NY. Snickers is a registered trademark of Mars Inc.
+NY.
+
+Snickers is a registered trademark of Mars Inc.
