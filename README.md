@@ -37,53 +37,56 @@ npm install snacklish
 
 ### translate
 
+Translate an entire text document to Snacklish.
+
 ```js
 translate(text: string): string
 ```
 
 ### loadRules
 
+Load and parse the default Snacklish ruleset. The result is a ruleset that can
+be used with [rulesToFunction](#rulesToFunction).
+
 ```js
 loadRules(): RuleSet
 ```
 
-Load and parse the default Snacklish ruleset. The result is a ruleset that can
-be used with [rulesToFunction](#rulesToFunction).
-
 ### loadRuleString
+
+Load the default Snacklish document as a string from [snacklish.txt](./snacklish.txt).
 
 ```js
 loadRuleString(): string
 ```
 
-Load the default Snacklish document as a string from [snacklish.txt](./snacklish.txt).
-
 ### parseRules
+
+Parse a string containing substitution rules.
 
 ```js
 parseRules(ruleString: string): RuleSet
 ```
 
-Parse a string containing substitution rules.
-
 ### rulesToFunction
-
-```js
-rulesToFunction(rules: RuleSet): (word: string) => string
-```
 
 Turn a parsed ruleset into a function that translates a single token at a time.
 To translate a document using this function, you will need to call it for each
 token and join the results.
 
+```js
+rulesToFunction(rules: RuleSet): (word: string) => string
+```
+
 ### tokenize
+
+Split a text document into tokens using the default settings.
 
 ```js
 tokenize(text: string): string[]
 ```
 
-Split a text document into tokens using the default settings.
-
 ## Disclaimer
 
-This is a fan project, and has no affiliation with Snickers, Mars Inc., or TBWA NY.
+This is a fan project, and has no affiliation with Snickers, Mars Inc., or TBWA
+NY. Snickers is a registered trademark of Mars Inc.
