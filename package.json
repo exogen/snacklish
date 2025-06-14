@@ -4,13 +4,19 @@
   "description": "Translator from English to Snacklish",
   "author": "Brian Beck <exogen@gmail.com>",
   "license": "MIT",
-  "keywords": [],
+  "keywords": [
+    "chocolate",
+    "snacklish",
+    "translator",
+    "snickers"
+  ],
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
     "dev": "next dev demo",
     "build": "npm run build:pages",
-    "build:pages": "next build demo && touch docs/.nojekyll"
+    "build:pages": "next build demo && touch docs/.nojekyll",
+    "test": "vitest"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",

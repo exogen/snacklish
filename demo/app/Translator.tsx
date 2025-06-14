@@ -1,28 +1,21 @@
 "use client";
+import React, { useCallback, useMemo, useState, useTransition } from "react";
 import {
-  useCallback,
-  useEffect,
-  useMemo,
-  useState,
-  useTransition,
-} from "react";
-import {
-  getZeroHungerProbabilityFunction,
-  getKindaHungryProbabilityFunction,
-  getNormalHungerProbabilityFunction,
-  getExtremeHungerProbabilityFunction,
+  getZeroProbabilityFunction,
+  getKindaProbabilityFunction,
+  getNormalProbabilityFunction,
+  getExtremeProbabilityFunction,
   parseRules,
   rulesToFunction,
   tokenize,
 } from "../../src/rules";
 import styles from "./Translator.module.css";
-import React from "react";
 
 const probabilityFns = [
-  getZeroHungerProbabilityFunction,
-  getKindaHungryProbabilityFunction,
-  getNormalHungerProbabilityFunction,
-  getExtremeHungerProbabilityFunction,
+  getZeroProbabilityFunction,
+  getKindaProbabilityFunction,
+  getNormalProbabilityFunction,
+  getExtremeProbabilityFunction,
 ];
 
 function chunkText(text: string) {

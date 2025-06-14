@@ -54,6 +54,8 @@
 -eat
 -eat*
 -fill
+-flavor
+-flavor*
 -food
 -full
 -good
@@ -224,7 +226,8 @@ town -> chown
 two -> chew
 true -> chew
 truth -> chewth
-united -> chewnited
+unit -> chewnit
+unite -> chewnite
 use -> chews
 view -> chew
 wake -> snack
@@ -343,6 +346,7 @@ ave* -> flave*
 bom* -> delectabom*,barom*
 be**,-bea* -> bar**
 chu* -> snacku*
+cop* -> chocop*,chomp*
 dis* -> feast*
 dog* -> noug*
 eco* -> snacko*
@@ -376,7 +380,8 @@ sec* -> snack*
 sev* -> sweetv*
 sou* -> chow*
 sun* -> yum*
-uni* -> chewni*
+unit* -> chewnit*
+univ* -> chewniv*
 use* -> chews*
 van* -> flavan*
 voc* -> choc*

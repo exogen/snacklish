@@ -47,36 +47,34 @@ export default function RootLayout({
       <body>
         <main>{children}</main>
         <footer>
-          <div>
-            <p>
-              Fan project. Not affiliated with Snickers, Mars Inc., or TBWA NY.
-              Read about the original flavor{" "}
-              <a
-                href="https://www.thiagozanato.com/snickers-snacklish"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                here
-              </a>
-              ,{" "}
-              <a
-                href="https://workingnotworking.com/projects/64208-snickers-snacklish"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                here
-              </a>
-              , or{" "}
-              <a
-                href="https://www.nytimes.com/2009/03/03/business/media/03adco.html?smid=url-share"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                here
-              </a>
-              .
-            </p>
-          </div>
+          <small>
+            Fan project. Not affiliated with Snickers, Mars Inc., or TBWA NY.
+            Read about the original flavor{" "}
+            <a
+              href="https://www.thiagozanato.com/snickers-snacklish"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              here
+            </a>
+            ,{" "}
+            <a
+              href="https://workingnotworking.com/projects/64208-snickers-snacklish"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              here
+            </a>
+            , or{" "}
+            <a
+              href="https://www.nytimes.com/2009/03/03/business/media/03adco.html?smid=url-share"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              here
+            </a>
+            .
+          </small>
           <nav>
             <ul>
               <li>
