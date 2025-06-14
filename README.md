@@ -97,7 +97,10 @@ To translate a document using this function, you will need to call it for each
 token and join the results.
 
 ```ts
-rulesToFunction(rules: RuleSet, options: { getProbability: (token: string) => number }): (token: string) => string
+rulesToFunction(
+  rules: RuleSet,
+  options: { getProbability: (token: string) => number }
+): (token: string) => string
 ```
 
 ### tokenize
