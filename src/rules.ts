@@ -5,7 +5,7 @@ export function getRandom() {
 // let slugify = (word: string) => word;
 // let cromulence;
 
-export function getZeroProbabilityFunction() {
+export function getZeroHungerProbabilityFunction() {
   return (
     word: string,
     { type, pattern }: { type: string; pattern: string }
@@ -14,32 +14,26 @@ export function getZeroProbabilityFunction() {
   };
 }
 
-export function getExtremeProbabilityFunction() {
+export function getExtremeHungerProbabilityFunction() {
   return (
     word: string,
-
     { type, pattern }: { type: string; pattern: string }
   ) => {
     return 1;
   };
 }
 
-export function getNormalProbabilityFunction() {
+export function getNormalHungerProbabilityFunction() {
   return (
     word: string,
     { type, pattern }: { type: string; pattern: string }
   ) => {
     const firstPattern = pattern.split(",")[0];
-    switch (type) {
-      case "exact":
-        return firstPattern.length / 5;
-      default:
-        return firstPattern.length / 5;
-    }
+    return firstPattern.length / 5;
   };
 }
 
-export async function getKindaProbabilityFunction() {
+export function getKindaHungryProbabilityFunction() {
   // if (!cromulence) {
   //   const cromulenceModule = await import("cromulence");
   //   const { Cromulence, loadWordlist } = cromulenceModule;
@@ -136,7 +130,7 @@ export function randomChoice<T>(array: T[]): T {
 export function rulesToFunction(
   rules: RuleSet,
   {
-    getProbability = getNormalProbabilityFunction(),
+    getProbability = getNormalHungerProbabilityFunction(),
   }: {
     getProbability?: (
       word: string,

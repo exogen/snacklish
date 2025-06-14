@@ -7,9 +7,9 @@ to handle your flavoryday translation needs.
 
 ## Introduction
 
-Snacklish is a ridiculous language invented by Snickers and based on snack-related
-wordplay. This library (and demo site) exist to automatically translate English
-to Snacklish.
+Snacklish is a delicious language invented for Snickers based on snack-related
+wordplay. This library and demo site were created to put English-to-Snacklish
+translations back into the mouths of the people.
 
 If you just want to have some quick fun, [use the demo site!](https://exogen.github.io/snacklish/)
 
@@ -121,21 +121,21 @@ replaced. So, for example, 1 will always substitute and 0 will never substitute.
 The following exports are included with the library to create probability
 functions.
 
-#### getZeroProbabilityFunction
+#### getZeroHungerProbabilityFunction
 
 Never substitute.
 
-#### getKindaProbabilityFunction
+#### getKindaHungryProbabilityFunction
 
 Substitute sometimes. Shorter words are less likely to be substituted, longer
 words are more likely.
 
-#### getNormalProbabilityFunction
+#### getVeryHungryProbabilityFunction
 
 Substitute sometimes. Shorter words are less likely to be substituted, longer
 words are more likely.
 
-#### getExtremeProbabilityFunction
+#### getExtremeHungerProbabilityFunction
 
 Always substitute.
 

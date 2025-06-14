@@ -7,10 +7,10 @@ import {
   useTransition,
 } from "react";
 import {
-  getZeroProbabilityFunction,
-  getKindaProbabilityFunction,
-  getNormalProbabilityFunction,
-  getExtremeProbabilityFunction,
+  getZeroHungerProbabilityFunction,
+  getKindaHungryProbabilityFunction,
+  getNormalHungerProbabilityFunction,
+  getExtremeHungerProbabilityFunction,
   parseRules,
   rulesToFunction,
   tokenize,
@@ -19,10 +19,10 @@ import styles from "./Translator.module.css";
 import React from "react";
 
 const probabilityFns = [
-  getZeroProbabilityFunction,
-  getKindaProbabilityFunction,
-  getNormalProbabilityFunction,
-  getExtremeProbabilityFunction,
+  getZeroHungerProbabilityFunction,
+  getKindaHungryProbabilityFunction,
+  getNormalHungerProbabilityFunction,
+  getExtremeHungerProbabilityFunction,
 ];
 
 function chunkText(text: string) {
@@ -60,7 +60,7 @@ export function Translator({ ruleString }) {
   const [hungerLevel, setHungerLevel] = useState(2);
   const [isPending, startTransition] = useTransition();
   const [probabilityFunction, setProbabilityFunction] = useState(() =>
-    getNormalProbabilityFunction()
+    probabilityFns[hungerLevel]()
   );
 
   const rules = useMemo(() => parseRules(ruleString), [ruleString]);
