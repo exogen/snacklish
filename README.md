@@ -4,7 +4,9 @@
 
 **Now with improved flavor!** [Check out the demo site](https://exogen.github.io/snacklish/) to handle your flavoryday translation needs.
 
-## Usage
+## Introduction
+
+Snacklish is a ridiculous language based on snack-related wordplay. This library (and demo site) exist to automatically translate English to Snacklish.
 
 If you just want to have some quick fun, [use the demo site!](https://exogen.github.io/snacklish/)
 
@@ -33,13 +35,22 @@ Translation is based on simple pattern-based substitution rules. Automatic phone
 npm install snacklish
 ```
 
+## Usage
+
+```ts
+import { translate } from "snacklish";
+
+translate("hello, world!");
+// -> "caramello, chocoworld!"
+```
+
 ## API
 
 ### translate
 
 Translate an entire text document to Snacklish.
 
-```js
+```ts
 translate(text: string): string
 ```
 
@@ -48,7 +59,7 @@ translate(text: string): string
 Load and parse the default Snacklish ruleset. The result is a ruleset that can
 be used with [rulesToFunction](#rulesToFunction).
 
-```js
+```ts
 loadRules(): RuleSet
 ```
 
@@ -56,7 +67,7 @@ loadRules(): RuleSet
 
 Load the default Snacklish document as a string from [snacklish.txt](./snacklish.txt).
 
-```js
+```ts
 loadRuleString(): string
 ```
 
@@ -64,7 +75,7 @@ loadRuleString(): string
 
 Parse a string containing substitution rules.
 
-```js
+```ts
 parseRules(ruleString: string): RuleSet
 ```
 
@@ -74,7 +85,7 @@ Turn a parsed ruleset into a function that translates a single token at a time.
 To translate a document using this function, you will need to call it for each
 token and join the results.
 
-```js
+```ts
 rulesToFunction(rules: RuleSet): (word: string) => string
 ```
 
@@ -82,7 +93,7 @@ rulesToFunction(rules: RuleSet): (word: string) => string
 
 Split a text document into tokens using the default settings.
 
-```js
+```ts
 tokenize(text: string): string[]
 ```
 
