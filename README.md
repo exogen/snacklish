@@ -119,7 +119,8 @@ tokenize(text: string): string[]
 To customize the frequency of substitutions, you may pass a custom “probability
 function.” The function will be passed the original token, and must return a
 number. If the result of `Math.random()` is less than the number, the token is
-replaced. So, for example, 1 will always substitute and 0 will never substitute.
+replaced. For example, a function that always returns 1 will always substitute;
+one that returns 0 will never substitute.
 
 The following exports are included with the library to create probability
 functions.
