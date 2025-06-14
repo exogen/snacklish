@@ -131,12 +131,12 @@ Never substitute.
 
 #### getKindaProbabilityFunction
 
-Substitute sometimes. Shorter words are less likely to be substituted, longer
+Substitute sometimes. Shorter patterns are less likely to be substituted, longer
 words are more likely.
 
 #### getNormalProbabilityFunction
 
-Substitute sometimes. Shorter words are less likely to be substituted, longer
+Substitute sometimes. Shorter patterns are less likely to be substituted, longer
 words are more likely.
 
 #### getExtremeProbabilityFunction
