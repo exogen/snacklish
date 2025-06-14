@@ -97,7 +97,7 @@ export function parseRules(ruleString: string) {
   return { stopWords, stopPatterns, exactSubs, patternSubs };
 }
 
-export type Rules = ReturnType<typeof parseRules>;
+export type RuleSet = ReturnType<typeof parseRules>;
 
 function patternToRegex(pattern: string) {
   return new RegExp(`^${pattern}$`.replace(/\*/g, "(.+)"));
@@ -134,7 +134,7 @@ export function randomChoice<T>(array: T[]): T {
 }
 
 export function rulesToFunction(
-  rules: Rules,
+  rules: RuleSet,
   {
     getProbability,
   }: {
