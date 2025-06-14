@@ -127,11 +127,13 @@ Never substitute.
 
 #### getKindaProbabilityFunction
 
-Substitute sometimes.
+Substitute sometimes. Shorter words are less likely to be substituted, longer
+words are more likely.
 
 #### getNormalProbabilityFunction
 
-Substitute a little more.
+Substitute sometimes. Shorter words are less likely to be substituted, longer
+words are more likely.
 
 #### getExtremeProbabilityFunction
 
