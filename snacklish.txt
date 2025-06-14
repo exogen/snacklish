@@ -160,6 +160,7 @@ much -> munch
 must -> nuts
 new -> chew
 ninety -> nutty
+none -> nuttin
 not -> nut
 nothing -> nuthing
 now -> chow
