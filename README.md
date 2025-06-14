@@ -49,20 +49,23 @@ npm install snacklish
 ## Usage
 
 ```ts
-import { translate } from "snacklish";
+import { createTranslator } from "snacklish";
 
-translate("hello, world!");
+const translate = createTranslator();
+
+await translate("hello, world!");
 // -> "caramello, chocoworld!"
 ```
 
 ## API
 
-### translate
+### createTranslator
 
-Translate an entire text document to Snacklish.
+Return a function that can be used to translate a text document from English to
+Snacklish.
 
 ```ts
-translate(text: string): string
+createTranslator({ getProbability: ProbabilityFunction }): Promise<TranslatorFunction>
 ```
 
 ### loadRules
@@ -71,7 +74,7 @@ Load and parse the default Snacklish ruleset. The result is a ruleset that can
 be used with [rulesToFunction](#rulesToFunction).
 
 ```ts
-loadRules(): RuleSet
+loadRules(): Promise<RuleSet>
 ```
 
 ### loadRuleString
@@ -79,7 +82,7 @@ loadRules(): RuleSet
 Load the default Snacklish document as a string from [snacklish.txt](./snacklish.txt).
 
 ```ts
-loadRuleString(): string
+loadRuleString(): Promise<string>
 ```
 
 ### parseRules
@@ -121,21 +124,21 @@ replaced. So, for example, 1 will always substitute and 0 will never substitute.
 The following exports are included with the library to create probability
 functions.
 
-#### getZeroHungerProbabilityFunction
+#### getZeroProbabilityFunction
 
 Never substitute.
 
-#### getKindaHungryProbabilityFunction
+#### getKindaProbabilityFunction
 
 Substitute sometimes. Shorter words are less likely to be substituted, longer
 words are more likely.
 
-#### getVeryHungryProbabilityFunction
+#### getNormalProbabilityFunction
 
 Substitute sometimes. Shorter words are less likely to be substituted, longer
 words are more likely.
 
-#### getExtremeHungerProbabilityFunction
+#### getExtremeProbabilityFunction
 
 Always substitute.
 

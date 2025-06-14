@@ -1,3 +1,8 @@
+export type ProbabilityFunction = (
+  word: string,
+  { type, pattern }: { type: string; pattern: string }
+) => number;
+
 export function getRandom() {
   return Math.random();
 }
@@ -5,35 +10,26 @@ export function getRandom() {
 // let slugify = (word: string) => word;
 // let cromulence;
 
-export function getZeroHungerProbabilityFunction() {
-  return (
-    word: string,
-    { type, pattern }: { type: string; pattern: string }
-  ) => {
+export function getZeroProbabilityFunction(): ProbabilityFunction {
+  return (word, { type, pattern }) => {
     return 0;
   };
 }
 
-export function getExtremeHungerProbabilityFunction() {
-  return (
-    word: string,
-    { type, pattern }: { type: string; pattern: string }
-  ) => {
+export function getExtremeProbabilityFunction(): ProbabilityFunction {
+  return (word, { type, pattern }) => {
     return 1;
   };
 }
 
-export function getNormalHungerProbabilityFunction() {
-  return (
-    word: string,
-    { type, pattern }: { type: string; pattern: string }
-  ) => {
+export function getNormalProbabilityFunction(): ProbabilityFunction {
+  return (word, { type, pattern }) => {
     const firstPattern = pattern.split(",")[0];
     return firstPattern.length / 5;
   };
 }
 
-export function getKindaHungryProbabilityFunction() {
+export function getKindaProbabilityFunction(): ProbabilityFunction {
   // if (!cromulence) {
   //   const cromulenceModule = await import("cromulence");
   //   const { Cromulence, loadWordlist } = cromulenceModule;
@@ -41,10 +37,7 @@ export function getKindaHungryProbabilityFunction() {
   //   const wordlist = await loadWordlist();
   //   cromulence = new Cromulence(wordlist);
   // }
-  return (
-    word: string,
-    { type, pattern }: { type: string; pattern: string }
-  ) => {
+  return (word, { type, pattern }) => {
     // const slug = slugify(word);
     // const info = cromulence.info(slug);
     // return 5 / 1.5 ** info.zipf;
