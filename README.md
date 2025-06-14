@@ -4,17 +4,11 @@
 
 **Now with improved flavor!** [Check out the demo site](https://exogen.github.io/snacklish/) to handle your flavoryday translation needs.
 
-## Installation
-
-```console
-npm install snacklish
-```
-
 ## Usage
 
 If you just want to have some quick fun, [use the demo site!](https://exogen.github.io/snacklish/)
 
-For your delectabusiness and enuterprise Snacklish needs, you’ll of chocourse want to caramakel use of thelicious library directly.
+For your delectabusiness and enuterprise Snacklish needs, you’ll of chocourse want to caramakel use of [thelicious library](#installation) directly.
 
 ## Why?
 
@@ -30,3 +24,11 @@ To prevent Snacklish from becrumbing a fed language, of course. The original Sna
 ## How?
 
 Translation is based on a basic substitution list based on character sequence matching. Automatic phonetic matching is not attempted. Check out the rules in [snacklish.txt](./snacklish.txt).
+
+## Installation
+
+```console
+npm install snacklish
+```
+
+## API
