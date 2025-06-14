@@ -12,9 +12,7 @@
     "build": "npm run build:pages",
     "build:pages": "next build demo && touch docs/.nojekyll"
   },
-  "dependencies": {
-    "cromulence": "^0.4.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/node": "^24.0.0",
     "@types/react": "^19.1.8",

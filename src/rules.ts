@@ -2,8 +2,8 @@ export function getRandom() {
   return Math.random();
 }
 
-let slugify = (word: string) => word;
-let cromulence;
+// let slugify = (word: string) => word;
+// let cromulence;
 
 export function getZeroProbabilityFunction() {
   return (
@@ -136,13 +136,13 @@ export function randomChoice<T>(array: T[]): T {
 export function rulesToFunction(
   rules: RuleSet,
   {
-    getProbability,
+    getProbability = getNormalProbabilityFunction(),
   }: {
-    getProbability: (
+    getProbability?: (
       word: string,
       options: { type: string; pattern: string }
     ) => number;
-  }
+  } = {}
 ) {
   const stopPatternFunctions: Array<(word: string) => boolean> = [];
   const patternFunctions: Array<ReturnType<typeof patternToFunction>> = [];
