@@ -162,7 +162,7 @@ new -> chew
 ninety -> nutty
 none -> nuttin
 not -> nut
-nothing -> nuthing
+nothing -> nuthing,nuttin
 now -> chow
 nuclear -> chewclear
 number -> hunger
