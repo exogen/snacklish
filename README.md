@@ -14,12 +14,19 @@ npm install snacklish
 
 If you just want to have some quick fun, [use the demo site!](https://exogen.github.io/snacklish/)
 
-For all your delectabusiness and enuterprise Snacklish needs, you’ll of chocourse want to caramakel use of thelicious library directly.
+For your delectabusiness and enuterprise Snacklish needs, you’ll of chocourse want to caramakel use of thelicious library directly.
 
-## Motivation
+## Why?
 
 To prevent Snacklish from becrumbing a fed language, of course. The original Snacklish translator has been offline for some time. Attempts were made to copy it, but none that I found snackceptable.
 
-### Improvements
+## Improvements
 
-New words have been added to the lexicon: like **crumb**, **melt**
+- 🆕 New words have been added to the lexicon, like **crave**, **cream**, **crumb**, and **melt**.
+- 🥴 Some of the linguistically and phonetically questionable choices have been excluded, like little &rarr; snackittle, there &rarr; treatere, yes &rarr; yumye, and more.
+- 💎 Updated the pattern matching to prefer better substitutions.
+- 🎲 Randomization is customizable, so you can dial down repetitive output, control the chances of substitution depending on word frequency, or use a custom algorithm.
+
+## How?
+
+Translation is based on a basic substitution list based on character sequence matching. Automatic phonetic matching is not attempted. Check out the rules in [snacklish.txt](./snacklish.txt).
