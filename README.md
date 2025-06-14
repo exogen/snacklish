@@ -12,7 +12,7 @@ For your delectabusiness and enuterprise Snacklish needs, you’ll of chocourse 
 
 ## Why?
 
-To prevent Snacklish from becrumbing a fed language, of course. The original Snacklish translator has been offline for some time. Some attempts were made to copy it, but nuttin that I found snackceptable.
+To prevent Snacklish from becrumbing a fed language, of course. The original Snacklish translator has been offline for far chew long. Some attempts were made to copy it, but nuttin that I found snackceptable.
 
 ## Improvements
 
