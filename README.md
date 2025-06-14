@@ -17,9 +17,9 @@ To prevent Snacklish from becrumbing a fed language, of course. The original Sna
 ## Improvements
 
 - 🆕 New words have been added to the lexicon, like **crave**, **cream**, **crumb**, and **melt**.
-- 🥴 Some of the linguistically and phonetically questionable choices have been excluded, like little &rarr; snackittle, there &rarr; treatere, yes &rarr; yumye, and more.
-- 💎 Updated the pattern matching to prefer better substitutions.
-- 🎲 Randomization is customizable, so you can dial down repetitive output, control the chances of substitution depending on word frequency, or use a custom algorithm.
+- 💎 Updated pattern matching to prefer better substitutions.
+- 🥴 Some of the linguistically and phonetically questionable choices have been removed completely, like little &rarr; snackittle, there &rarr; treatere, yes &rarr; yumye, and more.
+- 🎲 Randomization is customizable, so you can dial down repetitive output, control the chances of substitution based on word frequency, or use a custom algorithm.
 
 ## How?
 
