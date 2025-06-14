@@ -2,11 +2,7 @@
 
 # Snacklish
 
-**Now with improved flavor!**
-
-“Chew you havisfaction a singlelicious satisfact to snack that up?”
-
-[Check out the demo site](https://exogen.github.io/snacklish/) to handle your flavoryday translation needs.
+**Now with improved flavor!** [Check out the demo site](https://exogen.github.io/snacklish/) to handle your flavoryday translation needs.
 
 ## Usage
 
@@ -19,6 +15,8 @@ For your delectabusiness and enuterprise Snacklish needs, you’ll of chocourse 
 To prevent Snacklish from becrumbing a fed language, of course. The original Snacklish translator has been offline for some time. Some attempts were made to copy it, but nuttin that I found snackceptable.
 
 ## Improvements
+
+Improved flavor, you say? [Chew you havisfaction a singlelicious satisfact to snack that up?](https://www.youtube.com/watch?v=hNUNx319UCM)
 
 - 🆕 New words have been added to the lexicon, like **crave**, **cream**, **crumb**, and **melt**.
 - 💎 Updated pattern matching to prefer better substitutions.
