@@ -286,6 +286,7 @@ sighti* -> biti*
 speak* -> snack*
 start*,-starth* -> starv*
 street* -> streat*
+thous* -> chows*
 tighte* -> bite*
 tighti* -> biti*
 treas* -> treats*
@@ -299,6 +300,7 @@ under* -> hunger*
 *writer -> *biter
 
 bett* -> treat*
+bill* -> fill*
 choo* -> chew*
 chop* -> chomp*
 cert* -> sweet*

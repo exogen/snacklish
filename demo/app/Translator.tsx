@@ -118,6 +118,7 @@ export function Translator({ ruleString }) {
       <div className={styles.Texts}>
         <div className={styles.Input}>
           <textarea
+            autoFocus
             className={styles.InputText}
             cols={80}
             rows={10}
