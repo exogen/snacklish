@@ -59,6 +59,8 @@
 -food
 -full
 -good
+-hunger
+-hungry
 -peanut
 -peanut*
 -snack
@@ -74,6 +76,8 @@
 
 amazing -> yumazing
 america -> chocomerica
+anger -> hunger
+angry -> hungry
 another -> anuther
 anytime -> candytime,snacktime
 apart -> abart
@@ -89,6 +93,7 @@ by -> bite
 cage -> chocagelate
 cages -> chocagelates
 car -> caramel
+case -> taste
 catchy -> catchewy
 certainly -> sweetainly
 champ -> chomp
@@ -128,6 +133,7 @@ funny -> yummy
 get -> nouget
 go -> chogolate
 greet -> treat
+hack -> snack
 have -> havisfaction
 her -> flaveher
 help -> melt
@@ -135,12 +141,13 @@ hill -> fill
 him -> crunchim
 hope -> chochopelate
 houston -> chewston
+how -> chow
 howdy -> chowdy
 huey -> chewy
 humor -> chewmor
 hunch -> crunch
-important -> impeanutant
-importance -> impeanutance
+important -> impeanutant,chomportant
+importance -> impeanutance,chomportance
 jack -> snack
 junk -> chunk
 kid -> kidamel
@@ -178,6 +185,7 @@ phil -> fill
 power -> flavor
 put -> nut
 putty -> nutty
+rave -> crave
 right -> bite
 rude -> chewed
 rudely -> chewedly
@@ -195,6 +203,9 @@ single -> singlelicious
 singles -> snackles
 six -> snax
 sixty -> snaxty
+smell -> taste
+smells -> tastes
+smelling -> tasting
 snake -> snack
 so -> soweet
 speak -> snack
@@ -235,8 +246,8 @@ wave -> crave
 waving -> craving
 war -> whunger
 we -> chewy
-welcome -> welcrumb
 wet -> whet
+welcomes -> welcrumbs
 whitney -> whitnut
 who -> chew
 will -> fill
@@ -252,12 +263,16 @@ young -> yum
 champ* -> chomp*
 compe* -> chompe*
 compl* -> chompl*
+connectio* -> confectio*
 crush* -> crunch*
+divorc* -> flavorc*
 dream* -> cream*
 escap* -> snackscap*
 favorit* -> flavorit*
+forc* -> flavorc*,satisforc*
 great* -> treat*
 greet* -> treat*
+hack* -> snack*
 lighte* -> bite*
 lighti* -> biti*
 mansio* -> munchio*
@@ -275,6 +290,7 @@ street* -> streat*
 tighte* -> bite*
 tighti* -> biti*
 treas* -> treats*
+welcom* -> welcrumb*
 wonder* -> hunger*
 under* -> hunger*
 
@@ -318,6 +334,7 @@ test* -> tast*
 vacc* -> snackc*
 will* -> fill*
 
+*come -> *crumb
 *dure -> *chewer
 *face -> *feast
 *feat -> *feast
@@ -356,6 +373,7 @@ inn* -> indulg*
 god* -> chocod*
 hel* -> caramel*
 hun* -> yum*
+imp* -> chomp*
 int*,-inth* -> inut*
 mag* -> noug*
 mar* -> bar*

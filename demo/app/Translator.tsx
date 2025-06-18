@@ -18,7 +18,7 @@ const probabilityFns = [
   getExtremeProbabilityFunction,
 ];
 
-function chunkText(text: string) {
+function chunkText(text: string, length = 16) {
   const chunks = [];
   const lines = text.split(/([\r\n]+)/).filter(Boolean);
   for (const line of lines) {
@@ -33,7 +33,7 @@ function chunkText(text: string) {
         } else {
           chunk = word;
         }
-        if (chunk.length >= 15) {
+        if (chunk.length >= length) {
           chunks.push(chunk);
           chunk = "";
         }
