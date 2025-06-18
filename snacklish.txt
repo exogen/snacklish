@@ -40,7 +40,6 @@
 -where
 -why
 -with
--within
 -would
 -wouldn
 -you
@@ -95,7 +94,6 @@ cages -> chocagelates
 car -> caramel
 case -> taste
 catchy -> catchewy
-certainly -> sweetainly
 champ -> chomp
 choice -> chocoice,snackoice
 cities -> peanutopolises
@@ -251,6 +249,7 @@ welcomes -> welcrumbs
 whitney -> whitnut
 who -> chew
 will -> fill
+within -> withindulge
 wonder -> hunger
 world -> chocoworld
 write -> bite
@@ -302,6 +301,7 @@ under* -> hunger*
 bett* -> treat*
 choo* -> chew*
 chop* -> chomp*
+cert* -> sweet*
 city* -> peanutopolis*
 comp* -> yump*
 cont* -> crunch*
