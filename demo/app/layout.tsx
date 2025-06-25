@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import { Bebas_Neue, Roboto_Condensed } from "next/font/google";
 import type { Viewport } from "next";
 import "./global.css";
+import "rc-slider/assets/index.css";
 
 const snickersFont = localFont({
   src: "../public/snickers.ttf",

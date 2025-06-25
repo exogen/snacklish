@@ -1,5 +1,11 @@
 "use client";
-import React, { useCallback, useMemo, useState, useTransition } from "react";
+import React, {
+  useCallback,
+  useEffect,
+  useMemo,
+  useState,
+  useTransition,
+} from "react";
 import seedrandom from "seedrandom";
 import cryptoRandomString from "crypto-random-string";
 import {
@@ -69,9 +75,8 @@ export function Translator({ ruleString, defaultRandomSeed }) {
   const randomSeed = customRandomSeed || autoRandomSeed;
 
   const getRandom = useMemo(() => {
-    console.log(`new seedrandom with: ${randomSeed}`);
     return seedrandom(randomSeed);
-  }, [inputString, randomSeed, hungerLevel]);
+  }, [inputString, randomSeed, hungerLevel, probabilityFunction]);
 
   const rules = useMemo(() => parseRules(ruleString), [ruleString]);
 
@@ -105,6 +110,23 @@ export function Translator({ ruleString, defaultRandomSeed }) {
     () => chunkText(outputString, barSize),
     [outputString, barSize]
   );
+
+  useEffect(() => {
+    let cancelled = false;
+
+    const loadProbabilityFn = async () => {
+      const fn = await probabilityFns[hungerLevel]();
+      if (!cancelled) {
+        setProbabilityFunction(() => fn);
+      }
+    };
+
+    loadProbabilityFn();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [hungerLevel]);
 
   return (
     <form className={styles.Translator}>

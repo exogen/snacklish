@@ -19,7 +19,7 @@
 
 .Label {
   display: inline-block;
-  min-width: 150px;
+  min-width: 140px;
   text-align: right;
 }
 
@@ -31,11 +31,20 @@
 }
 
 .LayoutSelector input[type="radio"] ~ label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 6px;
   color: rgb(126, 95, 79);
 }
 
 .LayoutSelector input[type="radio"]:checked ~ label {
   color: rgb(255, 196, 46);
+}
+
+.LayoutSelector input[type="radio"]:focus-visible ~ label {
+  outline: 2px solid var(--white);
 }
 
 .LayoutIcon {

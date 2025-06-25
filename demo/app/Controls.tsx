@@ -8,6 +8,7 @@ import {
   getZeroProbabilityFunction,
 } from "../../src";
 import styles from "./Controls.module.css";
+import { HungerLevel } from "./HungerLevel";
 
 const probabilityFns = [
   getZeroProbabilityFunction,
@@ -45,19 +46,7 @@ export function Controls({
         <LayoutSelector value={layout} onChange={setLayout} />
         <div className={styles.Field}>
           <label htmlFor="hungerLevel">Hunger Level</label>
-          <input
-            id="hungerLevel"
-            type="range"
-            min={1}
-            max={3}
-            value={hungerLevel}
-            onChange={async (event) => {
-              const value = +event.target.value;
-              setHungerLevel(value);
-              const fn = await probabilityFns[value]();
-              setProbabilityFunction(() => fn);
-            }}
-          />
+          <HungerLevel value={hungerLevel} onChange={setHungerLevel} />
         </div>
         <div className={styles.Field}>
           <label htmlFor="randomSeed">Random Seed</label>
