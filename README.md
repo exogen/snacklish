@@ -120,6 +120,11 @@ Split a text document into tokens using the default tokenizer.
 tokenize(text: string): string[]
 ```
 
+### Custom Random Source
+
+The `getRandom` option can be used to provide a custom random source (with the
+same signature as `Math.random()`).
+
 ### Probability Functions
 
 To customize the frequency of substitutions, you may pass a custom “probability
