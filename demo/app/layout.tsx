@@ -52,22 +52,22 @@ export default function RootLayout({
             <ul>
               <li>
                 <a
-                  href="https://hachyderm.io/@exogen"
+                  href="https://github.com/exogen/snacklish"
                   rel="noopener"
-                  aria-label="exogen on Hachyderm"
-                  title="exogen on Hachyderm"
+                  aria-label="exogen/snacklish on GitHub"
+                  title="exogen/snacklish on GitHub"
                 >
-                  <FaMastodon className="icon" />
+                  <FaGithub className="icon" />
                 </a>
               </li>
               <li>
                 <a
-                  href="https://github.com/exogen"
+                  href="https://hachyderm.io/@exogen"
                   rel="noopener"
-                  aria-label="exogen on GitHub"
-                  title="exogen on GitHub"
+                  aria-label="exogen on Mastodon"
+                  title="exogen on Mastodon"
                 >
-                  <FaGithub className="icon" />
+                  <FaMastodon className="icon" />
                 </a>
               </li>
               <li>
