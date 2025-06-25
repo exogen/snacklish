@@ -1,3 +1,9 @@
+.Header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .Bar {
   position: relative;
   display: inline-block;
@@ -29,18 +35,16 @@
 }
 
 .Translator {
-  display: block;
-  width: 100%;
-}
-
-.Translator header {
-  text-align: center;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .Title {
-  display: inline-block;
+  flex: 0 0 auto;
   position: relative;
-  padding: 20px 20px 36px 20px;
+  padding: 36px 20px 36px 40px;
+  margin: 0 auto;
 }
 
 .Title h1 {
@@ -55,7 +59,7 @@
   position: absolute;
   display: inline-block;
   right: 15%;
-  top: 64.5%;
+  top: 69%;
   padding: 0.07em 0.14em;
   font-family: var(--bebas-neue-font);
   border-radius: 0.07em;
@@ -70,8 +74,22 @@
 }
 
 .Texts {
+  flex: 1 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+}
+
+@media (min-width: 960px) {
+  .Texts[data-layout="columns"] {
+    grid-template-columns: 3fr 4fr;
+    grid-template-rows: 1fr;
+  }
+
+  .Texts[data-layout="rows"] {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 3fr;
+  }
 }
 
 .Input,
@@ -106,8 +124,22 @@
   line-height: 36px;
   padding: 0.2em;
   overflow: auto;
+  text-align: center;
 }
 
 .OutputText .Bar {
   margin: 0.2em;
+}
+
+@media (min-width: 960px) {
+  .Header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .Title {
+    margin: 0;
+  }
 }

@@ -47,6 +47,40 @@ export default function RootLayout({
       <body>
         <main>{children}</main>
         <footer>
+          <nav>
+            <ul>
+              <li>
+                <a
+                  href="https://hachyderm.io/@exogen"
+                  rel="noopener"
+                  aria-label="exogen on Hachyderm"
+                  title="exogen on Hachyderm"
+                >
+                  <FaMastodon className="icon" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/exogen"
+                  rel="noopener"
+                  aria-label="exogen on GitHub"
+                  title="exogen on GitHub"
+                >
+                  <FaGithub className="icon" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.buymeacoffee.com/mosswood" target="_blank">
+                  <img
+                    width={136}
+                    height={38}
+                    src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+                    alt="Buy Me A Coffee"
+                  />
+                </a>
+              </li>
+            </ul>
+          </nav>
           <small>
             Fan project. Not affiliated with Snickers, Mars Inc., or TBWA NY.
             Read about the original flavor{" "}
@@ -75,40 +109,6 @@ export default function RootLayout({
             </a>
             .
           </small>
-          <nav>
-            <ul>
-              <li>
-                <a
-                  href="https://hachyderm.io/@exogen"
-                  rel="noopener"
-                  aria-label="exogen on Hachyderm"
-                  title="exogen on Hachyderm"
-                >
-                  <FaMastodon className="icon" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/exogen"
-                  rel="noopener"
-                  aria-label="exogen on GitHub"
-                  title="exogen on GitHub"
-                >
-                  <FaGithub className="icon" />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.buymeacoffee.com/mosswood" target="_blank">
-                  <img
-                    width={109}
-                    height={30}
-                    src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
-                    alt="Buy Me A Coffee"
-                  />
-                </a>
-              </li>
-            </ul>
-          </nav>
         </footer>
       </body>
     </html>

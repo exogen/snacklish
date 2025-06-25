@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { createTranslator } from ".";
+import { createTranslator } from "./index.js";
 
 describe("createTranslator", () => {
   it("creates a translator function", async () => {

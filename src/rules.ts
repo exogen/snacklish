@@ -3,7 +3,7 @@ export type ProbabilityFunction = (
   { type, pattern }: { type: string; pattern: string }
 ) => number;
 
-export function getRandom() {
+export function defaultRandom() {
   return Math.random();
 }
 
@@ -24,7 +24,7 @@ export function getExtremeProbabilityFunction(): ProbabilityFunction {
 
 export function getNormalProbabilityFunction(): ProbabilityFunction {
   return (word, { type, pattern }) => {
-    const firstPattern = pattern.split(",")[0];
+    const firstPattern = pattern.split(",")[0]!;
     return firstPattern.length / 5;
   };
 }
@@ -41,7 +41,7 @@ export function getKindaProbabilityFunction(): ProbabilityFunction {
     // const slug = slugify(word);
     // const info = cromulence.info(slug);
     // return 5 / 1.5 ** info.zipf;
-    const firstPattern = pattern.split(",")[0];
+    const firstPattern = pattern.split(",")[0]!;
     switch (type) {
       case "exact":
         return firstPattern.length / 6;
@@ -102,7 +102,7 @@ function patternToFunction(inputPattern: string, outputPattern: string) {
   }
   const okRegexes = okPatterns.map((pattern) => patternToRegex(pattern));
   const antiRegexes = antiPatterns.map((pattern) => patternToRegex(pattern));
-  const primaryRegex = okRegexes[0];
+  const primaryRegex = okRegexes[0]!;
   let n = 1;
   const subString = outputPattern.replace(/\*/g, () => `$${n++}`);
   return (text: string) => {
@@ -116,15 +116,21 @@ function patternToFunction(inputPattern: string, outputPattern: string) {
   };
 }
 
-export function randomChoice<T>(array: T[]): T {
-  return array[Math.floor(getRandom() * array.length)];
+export function randomChoice<T>(
+  array: T[],
+  getRandom: () => number = defaultRandom
+) {
+  const index = Math.floor(getRandom() * array.length);
+  return array[index];
 }
 
 export function rulesToFunction(
   rules: RuleSet,
   {
-    getProbability = getNormalHungerProbabilityFunction(),
+    getRandom = defaultRandom,
+    getProbability = getNormalProbabilityFunction(),
   }: {
+    getRandom?: () => number;
     getProbability?: (
       word: string,
       options: { type: string; pattern: string }
@@ -143,7 +149,7 @@ export function rulesToFunction(
   for (const [pattern, subs] of rules.patternSubs.entries()) {
     const fns = subs.map((sub) => patternToFunction(pattern, sub));
     const fn = (word: string) => {
-      const result = randomChoice(fns)(word);
+      const result = randomChoice(fns, getRandom)!(word);
       if (result.match) {
         const probability = getProbability(word, { type: "pattern", pattern });
         const random = getRandom();
@@ -198,8 +204,4 @@ export function rulesToFunction(
 
     return word;
   };
-}
-
-export function tokenize(text: string) {
-  return text.split(/([\W]+)/);
 }

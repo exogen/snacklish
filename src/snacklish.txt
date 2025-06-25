@@ -38,6 +38,7 @@
 -what
 -when
 -where
+-whole
 -why
 -with
 -would
@@ -165,7 +166,9 @@ met -> melt
 might -> bite
 much -> munch
 must -> nuts
+n't -> nut
 new -> chew
+night -> bite
 ninety -> nutty
 none -> nuttin
 not -> nut
@@ -208,6 +211,7 @@ snake -> snack
 so -> soweet
 speak -> snack
 spill -> sfill
+stack -> snack
 start -> starve
 state -> taste
 statue -> stachew
@@ -229,8 +233,10 @@ tight -> bite
 tights -> bites
 time -> snacktime
 times -> snacktimes
+tonight -> tonut,tobite
 too -> chew
 tongue -> tonguegry
+tour -> chewer
 town -> chown
 two -> chew
 true -> chew
@@ -260,6 +266,7 @@ yo -> yum
 young -> yum
 
 champ* -> chomp*
+chica* -> choca*
 compe* -> chompe*
 compl* -> chompl*
 connectio* -> confectio*
@@ -274,6 +281,7 @@ greet* -> treat*
 hack* -> snack*
 lighte* -> bite*
 lighti* -> biti*
+locat* -> chocolat*
 mansio* -> munchio*
 necess* -> nesweet*
 other* -> flavother*
@@ -284,6 +292,7 @@ rude* -> chewed*
 sighte* -> bite*
 sighti* -> biti*
 speak* -> snack*
+stack* -> snack*
 start*,-starth* -> starv*
 street* -> streat*
 thous* -> chows*
@@ -307,6 +316,8 @@ cert* -> sweet*
 city* -> peanutopolis*
 comp* -> yump*
 cont* -> crunch*
+deca* -> delecta*
+dist* -> feast*
 ever* -> flavor*
 fact* -> satisfact*
 feel* -> fill*
@@ -334,6 +345,7 @@ term* -> treatm*
 terr* -> treat*
 test* -> tast*
 vacc* -> snackc*
+veri* -> flaveri*
 will* -> fill*
 
 *come -> *crumb

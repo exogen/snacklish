@@ -1,5 +1,7 @@
 "use client";
 import React, { useCallback, useMemo, useState, useTransition } from "react";
+import seedrandom from "seedrandom";
+import cryptoRandomString from "crypto-random-string";
 import {
   getZeroProbabilityFunction,
   getKindaProbabilityFunction,
@@ -8,7 +10,8 @@ import {
   parseRules,
   rulesToFunction,
   tokenize,
-} from "../../src/rules";
+} from "../../src";
+import { Controls } from "./Controls";
 import styles from "./Translator.module.css";
 
 const probabilityFns = [
@@ -48,21 +51,36 @@ function chunkText(text: string, length = 16) {
   return chunks;
 }
 
-export function Translator({ ruleString }) {
+function getAutoRandomSeed() {
+  return cryptoRandomString({ length: 6, type: "hex" });
+}
+
+export function Translator({ ruleString, defaultRandomSeed }) {
+  const [layout, setLayout] = useState("rows");
   const [inputString, setInputString] = useState("");
+  const [autoRandomSeed, setAutoRandomSeed] = useState(defaultRandomSeed);
+  const [customRandomSeed, setCustomRandomSeed] = useState("");
+  const [barSize, setBarSize] = useState(16);
   const [hungerLevel, setHungerLevel] = useState(2);
-  const [isPending, startTransition] = useTransition();
   const [probabilityFunction, setProbabilityFunction] = useState(() =>
     probabilityFns[hungerLevel]()
   );
+
+  const randomSeed = customRandomSeed || autoRandomSeed;
+
+  const getRandom = useMemo(() => {
+    console.log(`new seedrandom with: ${randomSeed}`);
+    return seedrandom(randomSeed);
+  }, [inputString, randomSeed, hungerLevel]);
 
   const rules = useMemo(() => parseRules(ruleString), [ruleString]);
 
   const snacklish = useMemo(() => {
     return rulesToFunction(rules, {
+      getRandom,
       getProbability: probabilityFunction,
     });
-  }, [rules, probabilityFunction]);
+  }, [rules, getRandom, probabilityFunction]);
 
   const translate = useCallback(
     (inputString) => {
@@ -83,53 +101,52 @@ export function Translator({ ruleString }) {
     return isAllUpperCase ? outputText.toUpperCase() : outputText;
   }, [translate, inputString, isAllUpperCase]);
 
-  const chunks = useMemo(() => chunkText(outputString), [outputString]);
+  const chunks = useMemo(
+    () => chunkText(outputString, barSize),
+    [outputString, barSize]
+  );
 
   return (
     <form className={styles.Translator}>
-      <header>
+      <header className={styles.Header}>
         <div className={styles.Title}>
           <h1>
             <span className={styles.Bar}>Snacklish</span>
           </h1>
           <h2>Improved flavor!</h2>
         </div>
-        <div className={styles.Controls}>
-          <label htmlFor="hungerLevel">Hunger Level</label>
-          <input
-            id="hungerLevel"
-            type="range"
-            min={1}
-            max={3}
-            value={hungerLevel}
-            onChange={(event) => {
-              const value = +event.target.value;
-              setHungerLevel(value);
-              startTransition(async () => {
-                const fn = await probabilityFns[value]();
-                startTransition(() => {
-                  setProbabilityFunction(() => fn);
-                });
-              });
-            }}
-          />
-        </div>
+        <Controls
+          layout={layout}
+          setLayout={setLayout}
+          barSize={barSize}
+          setBarSize={setBarSize}
+          hungerLevel={hungerLevel}
+          setHungerLevel={setHungerLevel}
+          autoRandomSeed={autoRandomSeed}
+          customRandomSeed={customRandomSeed}
+          setCustomRandomSeed={setCustomRandomSeed}
+          setProbabilityFunction={setProbabilityFunction}
+        />
       </header>
-      <div className={styles.Texts}>
+      <div className={styles.Texts} data-layout={layout}>
         <div className={styles.Input}>
           <textarea
             autoFocus
             className={styles.InputText}
-            cols={80}
-            rows={10}
+            cols={30}
+            rows={2}
             value={inputString}
+            placeholder="Type anything here"
             onChange={(event) => {
               setInputString(event.target.value);
+              if (!event.target.value) {
+                setAutoRandomSeed(getAutoRandomSeed());
+              }
             }}
           />
         </div>
         <div className={styles.Output}>
-          <output className={styles.OutputText}>
+          <output className={styles.OutputText} key={outputString}>
             {chunks.map((chunk, i) =>
               chunk.trim() ? (
                 <React.Fragment key={i}>

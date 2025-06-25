@@ -1,28 +1,24 @@
 1:"$Sreact.fragment"
 2:I[9287,[],""]
 3:I[4235,[],""]
-5:I[3621,[],"MetadataBoundary"]
-7:I[3621,[],"OutletBoundary"]
-a:I[6867,[],"AsyncMetadataOutlet"]
-c:I[3621,[],"ViewportBoundary"]
-e:I[7890,[],""]
+6:I[3621,[],"MetadataBoundary"]
+8:I[3621,[],"OutletBoundary"]
+b:I[6867,[],"AsyncMetadataOutlet"]
+d:I[3621,[],"ViewportBoundary"]
+f:I[7890,[],""]
 :HL["/snacklish/_next/static/media/330d5559b8e2c3d6-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/snacklish/_next/static/media/a74ded2dbcc36e93-s.p.ttf","font",{"crossOrigin":"","type":"font/ttf"}]
 :HL["/snacklish/_next/static/media/cddf20da50eef6ec-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/snacklish/_next/static/media/dc1a31dd116e0329-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/snacklish/_next/static/css/6f43024aa109cad2.css","style"]
-:HL["/snacklish/_next/static/css/8df5450ae13047da.css","style"]
-0:{"P":null,"b":"Z98Wyc9693qzFbDnBQCHS","p":"/snacklish","c":["",""],"i":false,"f":[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/snacklish/_next/static/css/6f43024aa109cad2.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"__variable_86fb86 __variable_783740 __variable_c61021","children":["$","body",null,{"children":[["$","main",null,{"children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"children":["$","p",null,{"children":["No affiliation with Snickers, Mars Inc., or TBWA NY. Read about the original flavor"," ",["$","a",null,{"href":"https://www.thiagozanato.com/snickers-snacklish","target":"_blank","rel":"noreferrer noopener","children":"here"}],","," ",["$","a",null,{"href":"https://workingnotworking.com/projects/64208-snickers-snacklish","target":"_blank","rel":"noreferrer noopener","children":"here"}],", or"," ",["$","a",null,{"href":"https://www.nytimes.com/2009/03/03/business/media/03adco.html?smid=url-share","target":"_blank","rel":"noreferrer noopener","children":"here"}],"."]}]}]]}]}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L4",["$","$L5",null,{"children":"$L6"}],[["$","link","0",{"rel":"stylesheet","href":"/snacklish/_next/static/css/8df5450ae13047da.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L7",null,{"children":["$L8","$L9",["$","$La",null,{"promise":"$@b"}]]}]]}],{},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","9rhnCZ1DNP5gHVB8bdbfb",{"children":[["$","$Lc",null,{"children":"$Ld"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],null]}],false]],"m":"$undefined","G":["$e","$undefined"],"s":false,"S":true}
-f:"$Sreact.suspense"
-10:I[6867,[],"AsyncMetadata"]
-6:["$","$f",null,{"fallback":null,"children":["$","$L10",null,{"promise":"$@11"}]}]
-9:null
-d:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=320, initial-scale=1"}]]
-8:null
-11:{"metadata":[],"error":null,"digest":"$undefined"}
-b:{"metadata":"$11:metadata","error":null,"digest":"$undefined"}
-12:I[8685,["974","static/chunks/app/page-100ab1a03678736d.js"],"Translator"]
-13:T19ea,-about
+:HL["/snacklish/_next/static/css/a71d50e381ac61a2.css","style"]
+:HL["/snacklish/_next/static/css/4b58f63a727c66d4.css","style"]
+4:T518,M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z0:{"P":null,"b":"fsuOOPFBzgKqMORlbbpRw","p":"/snacklish","c":["",""],"i":false,"f":[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/snacklish/_next/static/css/a71d50e381ac61a2.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"__variable_86fb86 __variable_783740 __variable_c61021","children":["$","body",null,{"children":[["$","main",null,{"children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"children":[["$","nav",null,{"children":["$","ul",null,{"children":[["$","li",null,{"children":["$","a",null,{"href":"https://hachyderm.io/@exogen","rel":"noopener","aria-label":"exogen on Hachyderm","title":"exogen on Hachyderm","children":["$","svg",null,{"stroke":"currentColor","fill":"currentColor","strokeWidth":"0","viewBox":"0 0 448 512","className":"icon","children":["$undefined",[["$","path","0",{"d":"M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z","children":[]}]]],"style":{"color":"$undefined"},"height":"1em","width":"1em","xmlns":"http://www.w3.org/2000/svg"}]}]}],["$","li",null,{"children":["$","a",null,{"href":"https://github.com/exogen","rel":"noopener","aria-label":"exogen on GitHub","title":"exogen on GitHub","children":["$","svg",null,{"stroke":"currentColor","fill":"currentColor","strokeWidth":"0","viewBox":"0 0 496 512","className":"icon","children":["$undefined",[["$","path","0",{"d":"$4","children":[]}]]],"style":{"color":"$undefined"},"height":"1em","width":"1em","xmlns":"http://www.w3.org/2000/svg"}]}]}],["$","li",null,{"children":["$","a",null,{"href":"https://www.buymeacoffee.com/mosswood","target":"_blank","children":["$","img",null,{"width":136,"height":38,"src":"https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png","alt":"Buy Me A Coffee"}]}]}]]}]}],["$","small",null,{"children":["Fan project. Not affiliated with Snickers, Mars Inc., or TBWA NY. Read about the original flavor"," ",["$","a",null,{"href":"https://www.thiagozanato.com/snickers-snacklish","target":"_blank","rel":"noreferrer noopener","children":"here"}],","," ",["$","a",null,{"href":"https://workingnotworking.com/projects/64208-snickers-snacklish","target":"_blank","rel":"noreferrer noopener","children":"here"}],", or"," ",["$","a",null,{"href":"https://www.nytimes.com/2009/03/03/business/media/03adco.html?smid=url-share","target":"_blank","rel":"noreferrer noopener","children":"here"}],"."]}]]}]]}]}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",["$","$L6",null,{"children":"$L7"}],[["$","link","0",{"rel":"stylesheet","href":"/snacklish/_next/static/css/4b58f63a727c66d4.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L8",null,{"children":["$L9","$La",["$","$Lb",null,{"promise":"$@c"}]]}]]}],{},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","s_u5cc3QBp9HawI6o1r5g",{"children":[["$","$Ld",null,{"children":"$Le"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],null]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+10:"$Sreact.suspense"
+11:I[6867,[],"AsyncMetadata"]
+7:["$","$10",null,{"fallback":null,"children":["$","$L11",null,{"promise":"$@12"}]}]
+a:null
+13:I[7821,["140","static/chunks/c5aa9e7b-4650b267f30dc9f4.js","422","static/chunks/75daf03c-fb056e0e56c272e5.js","826","static/chunks/826-ddd3e1acd2c5144a.js","974","static/chunks/app/page-53c8c99abebfa366.js"],"Translator"]
+14:T1c8c,-about
 -age
 -among
 -all
@@ -62,9 +58,9 @@ b:{"metadata":"$11:metadata","error":null,"digest":"$undefined"}
 -what
 -when
 -where
+-whole
 -why
 -with
--within
 -would
 -wouldn
 -you
@@ -78,13 +74,19 @@ b:{"metadata":"$11:metadata","error":null,"digest":"$undefined"}
 -eat
 -eat*
 -fill
+-flavor
+-flavor*
 -food
 -full
 -good
+-hunger
+-hungry
 -peanut
 -peanut*
 -snack
 -snack*
+-sweet
+-sweet*
 -taste
 -taste*
 -tasty
@@ -94,6 +96,8 @@ b:{"metadata":"$11:metadata","error":null,"digest":"$undefined"}
 
 amazing -> yumazing
 america -> chocomerica
+anger -> hunger
+angry -> hungry
 another -> anuther
 anytime -> candytime,snacktime
 apart -> abart
@@ -109,8 +113,8 @@ by -> bite
 cage -> chocagelate
 cages -> chocagelates
 car -> caramel
+case -> taste
 catchy -> catchewy
-certainly -> sweetainly
 champ -> chomp
 choice -> chocoice,snackoice
 cities -> peanutopolises
@@ -132,6 +136,7 @@ dream -> cream
 dying -> satisfying
 down -> chown
 end -> endlectable
+et -> eat
 ever -> flavor
 face -> feast
 fact -> satisfact
@@ -147,6 +152,7 @@ funny -> yummy
 get -> nouget
 go -> chogolate
 greet -> treat
+hack -> snack
 have -> havisfaction
 her -> flaveher
 help -> melt
@@ -154,12 +160,13 @@ hill -> fill
 him -> crunchim
 hope -> chochopelate
 houston -> chewston
+how -> chow
 howdy -> chowdy
 huey -> chewy
 humor -> chewmor
 hunch -> crunch
-important -> impeanutant
-importance -> impeanutance
+important -> impeanutant,chomportant
+importance -> impeanutance,chomportance
 jack -> snack
 junk -> chunk
 kid -> kidamel
@@ -179,10 +186,13 @@ met -> melt
 might -> bite
 much -> munch
 must -> nuts
+n't -> nut
 new -> chew
+night -> bite
 ninety -> nutty
+none -> nuttin
 not -> nut
-nothing -> nuthing
+nothing -> nuthing,nuttin
 now -> chow
 nuclear -> chewclear
 number -> hunger
@@ -196,6 +206,7 @@ phil -> fill
 power -> flavor
 put -> nut
 putty -> nutty
+rave -> crave
 right -> bite
 rude -> chewed
 rudely -> chewedly
@@ -213,10 +224,14 @@ single -> singlelicious
 singles -> snackles
 six -> snax
 sixty -> snaxty
+smell -> taste
+smells -> tastes
+smelling -> tasting
 snake -> snack
 so -> soweet
 speak -> snack
 spill -> sfill
+stack -> snack
 start -> starve
 state -> taste
 statue -> stachew
@@ -238,13 +253,16 @@ tight -> bite
 tights -> bites
 time -> snacktime
 times -> snacktimes
+tonight -> tonut,tobite
 too -> chew
 tongue -> tonguegry
+tour -> chewer
 town -> chown
 two -> chew
 true -> chew
 truth -> chewth
-united -> chewnited
+unit -> chewnit
+unite -> chewnite
 use -> chews
 view -> chew
 wake -> snack
@@ -252,11 +270,12 @@ wave -> crave
 waving -> craving
 war -> whunger
 we -> chewy
-welcome -> welcrumb
 wet -> whet
+welcomes -> welcrumbs
 whitney -> whitnut
 who -> chew
 will -> fill
+within -> withindulge
 wonder -> hunger
 world -> chocoworld
 write -> bite
@@ -267,16 +286,22 @@ yo -> yum
 young -> yum
 
 champ* -> chomp*
+chica* -> choca*
 compe* -> chompe*
 compl* -> chompl*
+connectio* -> confectio*
 crush* -> crunch*
+divorc* -> flavorc*
 dream* -> cream*
 escap* -> snackscap*
 favorit* -> flavorit*
+forc* -> flavorc*,satisforc*
 great* -> treat*
 greet* -> treat*
+hack* -> snack*
 lighte* -> bite*
 lighti* -> biti*
+locat* -> chocolat*
 mansio* -> munchio*
 necess* -> nesweet*
 other* -> flavother*
@@ -287,11 +312,14 @@ rude* -> chewed*
 sighte* -> bite*
 sighti* -> biti*
 speak* -> snack*
+stack* -> snack*
 start*,-starth* -> starv*
 street* -> streat*
+thous* -> chows*
 tighte* -> bite*
 tighti* -> biti*
 treas* -> treats*
+welcom* -> welcrumb*
 wonder* -> hunger*
 under* -> hunger*
 
@@ -301,11 +329,15 @@ under* -> hunger*
 *writer -> *biter
 
 bett* -> treat*
+bill* -> fill*
 choo* -> chew*
 chop* -> chomp*
+cert* -> sweet*
 city* -> peanutopolis*
 comp* -> yump*
 cont* -> crunch*
+deca* -> delecta*
+dist* -> feast*
 ever* -> flavor*
 fact* -> satisfact*
 feel* -> fill*
@@ -333,8 +365,10 @@ term* -> treatm*
 terr* -> treat*
 test* -> tast*
 vacc* -> snackc*
+veri* -> flaveri*
 will* -> fill*
 
+*come -> *crumb
 *dure -> *chewer
 *face -> *feast
 *feat -> *feast
@@ -363,6 +397,7 @@ ave* -> flave*
 bom* -> delectabom*,barom*
 be**,-bea* -> bar**
 chu* -> snacku*
+cop* -> chocop*,chomp*
 dis* -> feast*
 dog* -> noug*
 eco* -> snacko*
@@ -372,6 +407,7 @@ inn* -> indulg*
 god* -> chocod*
 hel* -> caramel*
 hun* -> yum*
+imp* -> chomp*
 int*,-inth* -> inut*
 mag* -> noug*
 mar* -> bar*
@@ -396,7 +432,8 @@ sec* -> snack*
 sev* -> sweetv*
 sou* -> chow*
 sun* -> yum*
-uni* -> chewni*
+unit* -> chewnit*
+univ* -> chewniv*
 use* -> chews*
 van* -> flavan*
 voc* -> choc*
@@ -482,4 +519,8 @@ w* -> chew*
 *able -> *alectable
 
 *p -> *peanut
-4:["$","$L12",null,{"ruleString":"$13"}]
+5:["$","$L13",null,{"ruleString":"$14","defaultRandomSeed":"48030c"}]
+e:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=320, initial-scale=1"}]]
+9:null
+12:{"metadata":[],"error":null,"digest":"$undefined"}
+c:{"metadata":"$12:metadata","error":null,"digest":"$undefined"}

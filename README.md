@@ -38,7 +38,7 @@ Improved flavor, you say? [Chew you havisfaction a singlelicious satisfact to sn
 ## How?
 
 Translation is based on simple pattern-based substitution rules. Automatic phonetic
-matching is not attempted. Check out the rules in [snacklish.txt](./snacklish.txt).
+matching is not attempted. Check out the rules in [snacklish.txt](./src/snacklish.txt).
 
 ## Installation
 
@@ -79,7 +79,7 @@ loadRules(): Promise<RuleSet>
 
 ### loadRuleString
 
-Load the default Snacklish document as a string from [snacklish.txt](./snacklish.txt).
+Load the default Snacklish document as a string from [snacklish.txt](./src/snacklish.txt).
 
 ```ts
 loadRuleString(): Promise<string>

@@ -1,21 +1,8 @@
-import { fileURLToPath } from "node:url";
-import { dirname, join } from "node:path";
-import { readFile } from "node:fs/promises";
-import {
-  tokenize,
-  rulesToFunction,
-  getNormalProbabilityFunction,
-  ProbabilityFunction,
-  parseRules,
-} from "./rules";
-
-export type TranslatorFunction = (text: string) => string;
+import { rulesToFunction, ProbabilityFunction, parseRules } from "./rules";
 
 export async function loadRuleString() {
-  const __dirname = dirname(fileURLToPath(import.meta.url));
-  const rulesFilename = join(__dirname, "../snacklish.txt");
-  const text = await readFile(rulesFilename, "utf8");
-  return text;
+  const ruleStringModule = await import("./snacklish.txt?raw");
+  return ruleStringModule.default;
 }
 
 export async function loadRules() {
@@ -23,13 +10,21 @@ export async function loadRules() {
   return parseRules(ruleString);
 }
 
+export function tokenize(text: string) {
+  return text.split(/(n['’]t|\W+)/);
+}
+
+export type TranslatorFunction = (text: string) => string;
+
 export async function createTranslator({
-  getProbability = getNormalProbabilityFunction(),
+  getRandom,
+  getProbability,
 }: {
+  getRandom?: () => number;
   getProbability?: ProbabilityFunction;
-} = {}) {
+} = {}): Promise<TranslatorFunction> {
   const rules = await loadRules();
-  const translateToken = rulesToFunction(rules, { getProbability });
+  const translateToken = rulesToFunction(rules, { getRandom, getProbability });
 
   return (text: string) => {
     const tokens = tokenize(text);

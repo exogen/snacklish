@@ -1,0 +1,46 @@
+.LayoutSelector {
+  display: none;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+@media (min-width: 960px) {
+  .LayoutSelector {
+    display: flex;
+  }
+}
+
+.LayoutSelector legend {
+  display: contents;
+}
+
+.Label {
+  display: inline-block;
+  min-width: 150px;
+  text-align: right;
+}
+
+.LayoutSelector input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.LayoutSelector input[type="radio"] ~ label {
+  color: rgb(126, 95, 79);
+}
+
+.LayoutSelector input[type="radio"]:checked ~ label {
+  color: rgb(255, 196, 46);
+}
+
+.LayoutIcon {
+  font-size: 24px;
+}
+
+.LayoutTextLabel {
+}

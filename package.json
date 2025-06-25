@@ -1,6 +1,6 @@
 {
   "name": "snacklish",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Translator from English to Snacklish",
   "author": "Brian Beck <exogen@gmail.com>",
   "license": "MIT",
@@ -10,24 +10,45 @@
     "translator",
     "snickers"
   ],
+  "sideEffects": false,
   "type": "module",
-  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "module": "./dist/snacklish.esm.js",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": {
+        "types": "./dist/snacklish.d.ts",
+        "default": "./dist/snacklish.esm.js"
+      }
+    }
+  },
   "scripts": {
+    "clean": "rimraf dist",
     "dev": "next dev demo",
-    "build": "npm run build:pages",
+    "build": "npm run build:dist && npm run build:pages",
+    "build:dist": "npm run clean && vite build",
     "build:pages": "next build demo && touch docs/.nojekyll",
+    "prepare": "npm run build:dist",
     "test": "vitest"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",
     "@types/react": "^19.1.8",
+    "@types/seedrandom": "^3.0.8",
+    "crypto-random-string": "^5.0.0",
     "next": "^15.3.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-icons": "^5.5.0",
-    "tshy": "^3.0.2",
+    "rimraf": "^6.0.1",
+    "seedrandom": "^3.0.5",
     "tsx": "^4.20.1",
     "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "vite-plugin-dts": "^4.5.4",
     "vitest": "^3.2.3"
   }
 }

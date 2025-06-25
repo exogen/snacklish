@@ -1,0 +1,84 @@
+.Controls {
+  flex: 0 0 auto;
+  padding: 12px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Fields {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ToggleButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgb(94, 62, 30);
+  color: var(--white);
+  border: 1px solid rgb(42, 17, 9);
+  border-right-width: 3px;
+  border-bottom-width: 3px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-family: var(--roboto-condensed-font);
+  font-style: italic;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgb(42, 17, 9);
+  padding: 8px 20px;
+}
+
+.ToggleIcon {
+  font-size: 0.8em;
+  transform-origin: 50% 50%;
+  transition-property: transform;
+  transition-duration: 200ms;
+}
+
+.Controls[data-state="open"] .ToggleIcon {
+  transform: rotate(45deg);
+}
+
+@media (max-width: 959px) {
+  .Controls[data-state="closed"] .Fields {
+    display: none;
+  }
+
+  .Fields {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 960px) {
+  .ToggleButton {
+    display: none;
+  }
+}
+
+.Field {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.Field label {
+  display: inline-block;
+  min-width: 150px;
+  text-align: right;
+}
+
+.Field input[type="range"] {
+  max-width: 100px;
+}
+
+.Input {
+  border: 2px solid var(--red);
+}
+
+@media (min-width: 960px) {
+  .Controls {
+    margin-left: auto;
+  }
+}

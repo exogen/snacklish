@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": true,
+    "jsx": "react",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noUncheckedIndexedAccess": false,
+    "resolveJsonModule": true,
+    "skipLibCheck": false,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2022"
+  },
+  "include": ["src", "src/types"]
+}
