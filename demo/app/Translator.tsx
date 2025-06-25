@@ -37,14 +37,20 @@ function chunkText(text: string, length = 16) {
       const words = line.split(/[ \t]+/);
       for (let i = 0; i < words.length; i++) {
         const word = words[i];
-        if (chunk) {
-          chunk += " " + word;
-        } else {
-          chunk = word;
-        }
-        if (chunk.length >= length) {
-          chunks.push(chunk);
+        let newChunk = chunk ? chunk + " " + word : word;
+        if (newChunk.length > length) {
+          if (chunk) {
+            chunks.push(chunk);
+            chunk = word;
+          } else {
+            chunks.push(newChunk);
+            chunk = "";
+          }
+        } else if (newChunk.length === length) {
+          chunks.push(newChunk);
           chunk = "";
+        } else {
+          chunk = newChunk;
         }
       }
       if (chunk) {
@@ -66,7 +72,7 @@ export function Translator({ ruleString, defaultRandomSeed }) {
   const [inputString, setInputString] = useState("");
   const [autoRandomSeed, setAutoRandomSeed] = useState(defaultRandomSeed);
   const [customRandomSeed, setCustomRandomSeed] = useState("");
-  const [barSize, setBarSize] = useState(16);
+  const [barSize, setBarSize] = useState(18);
   const [hungerLevel, setHungerLevel] = useState(2);
   const [probabilityFunction, setProbabilityFunction] = useState(() =>
     probabilityFns[hungerLevel]()
