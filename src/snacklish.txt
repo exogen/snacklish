@@ -112,6 +112,7 @@ crying -> craving
 dead -> fed
 die -> satisfy
 do -> chew
+doing -> chewing
 dream -> cream
 dying -> satisfying
 down -> chown
