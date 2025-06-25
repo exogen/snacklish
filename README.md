@@ -65,7 +65,10 @@ Return a function that can be used to translate a text document from English to
 Snacklish.
 
 ```ts
-createTranslator({ getProbability: ProbabilityFunction }): Promise<TranslatorFunction>
+createTranslator(options: {
+  getRandom: () => number;
+  getProbability: ProbabilityFunction;
+}): Promise<TranslatorFunction>
 ```
 
 ### loadRules
@@ -101,8 +104,11 @@ token and join the results.
 
 ```ts
 rulesToFunction(
-  rules: RuleSet,
-  options: { getProbability: (token: string) => number }
+  rules: RuleSet;
+  options: {
+    getRandom: () => number;
+    getProbability: (token: string) => number;
+  }
 ): (token: string) => string
 ```
 

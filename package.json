@@ -1,6 +1,6 @@
 {
   "name": "snacklish",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Translator from English to Snacklish",
   "author": "Brian Beck <exogen@gmail.com>",
   "license": "MIT",
@@ -15,13 +15,13 @@
   "files": [
     "dist"
   ],
-  "module": "./dist/snacklish.esm.js",
+  "module": "./dist/snacklish.es.js",
   "exports": {
     "./package.json": "./package.json",
     ".": {
       "import": {
         "types": "./dist/snacklish.d.ts",
-        "default": "./dist/snacklish.esm.js"
+        "default": "./dist/snacklish.es.js"
       }
     }
   },
