@@ -292,6 +292,7 @@ rude* -> chewed*
 sighte* -> bite*
 sighti* -> biti*
 speak* -> snack*
+spect* -> snackt*
 stack* -> snack*
 start*,-starth* -> starv*
 street* -> streat*
@@ -314,7 +315,8 @@ choo* -> chew*
 chop* -> chomp*
 cert* -> sweet*
 city* -> peanutopolis*
-comp* -> yump*
+comm* -> chomp*,yumm*
+comp* -> chomp*,yump*
 cont* -> crunch*
 deca* -> delecta*
 dist* -> feast*

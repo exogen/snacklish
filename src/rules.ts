@@ -207,7 +207,7 @@ export function rulesToFunction(
       });
       const random = getRandom();
       const shouldSub = random < probability;
-      return shouldSub ? matchCase(randomChoice(subs)) : word;
+      return shouldSub ? matchCase(randomChoice(subs, getRandom)) : word;
     }
 
     if (word.length <= 2) {
