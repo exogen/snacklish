@@ -171,24 +171,43 @@ export function rulesToFunction(
     if (!word) {
       return word;
     }
-    if (rules.stopWords.has(word)) {
+
+    const normalizedWord = word.toLowerCase();
+    const isAllUpper = word === word.toUpperCase();
+    const isAllLower = word === normalizedWord;
+    const isKindaCapitalized =
+      word[0] === word[0].toUpperCase() && !isAllUpper && !isAllLower;
+
+    const matchCase = (output: string) => {
+      if (output === normalizedWord) {
+        return word;
+      } else if (isAllUpper) {
+        return output.toUpperCase();
+      } else if (isKindaCapitalized) {
+        return output[0].toUpperCase() + output.slice(1);
+      } else {
+        return output;
+      }
+    };
+
+    if (rules.stopWords.has(normalizedWord)) {
       return word;
     }
     for (const testFn of stopPatternFunctions) {
-      if (testFn(word)) {
+      if (testFn(normalizedWord)) {
         return word;
       }
     }
 
-    if (rules.exactSubs.has(word)) {
-      const subs = rules.exactSubs.get(word)!;
+    if (rules.exactSubs.has(normalizedWord)) {
+      const subs = rules.exactSubs.get(normalizedWord)!;
       const probability = getProbability(word, {
         type: "exact",
-        pattern: word,
+        pattern: normalizedWord,
       });
       const random = getRandom();
       const shouldSub = random < probability;
-      return shouldSub ? randomChoice(subs) : word;
+      return shouldSub ? matchCase(randomChoice(subs)) : word;
     }
 
     if (word.length <= 2) {
@@ -196,9 +215,9 @@ export function rulesToFunction(
     }
 
     for (const resultFn of patternFunctions) {
-      const result = resultFn(word);
+      const result = resultFn(normalizedWord);
       if (result.match) {
-        return result.output;
+        return matchCase(result.output);
       }
     }
 

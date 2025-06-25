@@ -102,15 +102,10 @@ export function Translator({ ruleString, defaultRandomSeed }) {
     [inputString, snacklish]
   );
 
-  const isAllUpperCase = useMemo(
-    () => inputString === inputString.toUpperCase(),
-    [inputString]
-  );
-
   const outputString = useMemo(() => {
-    const outputText = translate(inputString.trim().toLowerCase());
-    return isAllUpperCase ? outputText.toUpperCase() : outputText;
-  }, [translate, inputString, isAllUpperCase]);
+    const outputText = translate(inputString.trim());
+    return outputText;
+  }, [translate, inputString]);
 
   const chunks = useMemo(
     () => chunkText(outputString, barSize),
