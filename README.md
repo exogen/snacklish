@@ -51,9 +51,9 @@ npm install snacklish
 ```ts
 import { createTranslator } from "snacklish";
 
-const translate = createTranslator();
+const translate = await createTranslator();
 
-await translate("hello, world!");
+translate("hello, world!");
 // -> "caramello, chocoworld!"
 ```
 
@@ -122,8 +122,8 @@ tokenize(text: string): string[]
 
 ### Custom Random Source
 
-The `getRandom` option can be used to provide a custom random source (with the
-same signature as `Math.random()`).
+The `getRandom` option can be used to provide a custom random source (for example,
+to supply a seeded PRNG). The default is `Math.random()`.
 
 ### Probability Functions
 

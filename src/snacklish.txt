@@ -335,6 +335,7 @@ regu* -> nougu*
 reme* -> treatme*
 repo* -> treatpo*
 shoo* -> chew*
+sacr* -> snackr*
 sena* -> snacka*
 some* -> yum*
 sunn* -> yumm*
