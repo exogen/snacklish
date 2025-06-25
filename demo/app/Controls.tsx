@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaPlus } from "react-icons/fa";
+import { ImShuffle } from "react-icons/im";
 import LayoutSelector from "./LayoutSelector";
 import {
   getExtremeProbabilityFunction,
@@ -26,8 +27,8 @@ export function Controls({
   setHungerLevel,
   customRandomSeed,
   setCustomRandomSeed,
+  getAutoRandomSeed,
   autoRandomSeed,
-  setProbabilityFunction,
 }) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -50,17 +51,30 @@ export function Controls({
         </div>
         <div className={styles.Field}>
           <label htmlFor="randomSeed">Random Seed</label>
-          <input
-            className={styles.Input}
-            id="randomSeed"
-            type="text"
-            size={6}
-            value={customRandomSeed}
-            placeholder={autoRandomSeed}
-            onChange={(event) => {
-              setCustomRandomSeed(event.target.value);
-            }}
-          />
+          <div className={styles.Inputs}>
+            <input
+              className={styles.Input}
+              id="randomSeed"
+              type="text"
+              size={6}
+              value={customRandomSeed}
+              placeholder={autoRandomSeed}
+              onChange={(event) => {
+                setCustomRandomSeed(event.target.value);
+              }}
+            />
+            <button
+              className={styles.ShuffleButton}
+              type="button"
+              aria-label="Randomize"
+              title="Randomize"
+              onClick={(event) => {
+                setCustomRandomSeed(getAutoRandomSeed());
+              }}
+            >
+              <ImShuffle />
+            </button>
+          </div>
         </div>
         <div className={styles.Field}>
           <label htmlFor="barSize">Bar Size</label>

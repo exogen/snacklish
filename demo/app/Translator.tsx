@@ -161,10 +161,10 @@ export function Translator({ ruleString, defaultRandomSeed }) {
           setBarSize={setBarSize}
           hungerLevel={hungerLevel}
           setHungerLevel={setHungerLevel}
+          getAutoRandomSeed={getAutoRandomSeed}
           autoRandomSeed={autoRandomSeed}
           customRandomSeed={customRandomSeed}
           setCustomRandomSeed={setCustomRandomSeed}
-          setProbabilityFunction={setProbabilityFunction}
         />
       </header>
       <div className={styles.Texts} data-layout={layout}>

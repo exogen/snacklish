@@ -38,6 +38,34 @@
   transition-duration: 200ms;
 }
 
+.ShuffleButton:focus-visible {
+  outline: 2px solid var(--white);
+}
+
+.Inputs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ShuffleButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 3px;
+  background: var(--caramel);
+  margin: 0;
+  padding: 0;
+  width: 30px;
+  height: 25px;
+  font-size: 18px;
+}
+
+.ShuffleButton > * {
+  flex: 0 0 auto;
+}
+
 .Controls[data-state="open"] .ToggleIcon {
   transform: rotate(45deg);
 }
