@@ -85,6 +85,13 @@
   padding: 20px;
 }
 
+.Output {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
 .InputText {
   display: block;
   width: 100%;
@@ -116,6 +123,25 @@
 
 .OutputText .Bar {
   margin: 0.2em;
+}
+
+.CopyButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: rgb(118, 74, 31);
+  color: var(--white);
+  border: 1px solid rgb(42, 17, 9);
+  border-right-width: 3px;
+  border-bottom-width: 3px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-family: var(--roboto-condensed-font);
+  font-style: italic;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgb(42, 17, 9);
+  padding: 8px 20px;
+  user-select: none;
 }
 
 @media (min-width: 960px) {

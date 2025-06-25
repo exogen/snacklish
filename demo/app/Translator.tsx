@@ -1,13 +1,9 @@
 "use client";
-import React, {
-  useCallback,
-  useEffect,
-  useMemo,
-  useState,
-  useTransition,
-} from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import seedrandom from "seedrandom";
 import cryptoRandomString from "crypto-random-string";
+import { RiFileCopy2Line } from "react-icons/ri";
+import { FaClipboardCheck } from "react-icons/fa";
 import {
   getZeroProbabilityFunction,
   getKindaProbabilityFunction,
@@ -77,6 +73,8 @@ export function Translator({ ruleString, defaultRandomSeed }) {
   const [probabilityFunction, setProbabilityFunction] = useState(() =>
     probabilityFns[hungerLevel]()
   );
+  const [isClipboardSupported, setIsClipboardSupported] = useState(false);
+  const [successfulCopyCount, setSuccessfulCopyCount] = useState(0);
 
   const randomSeed = customRandomSeed || autoRandomSeed;
 
@@ -113,6 +111,12 @@ export function Translator({ ruleString, defaultRandomSeed }) {
   );
 
   useEffect(() => {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      setIsClipboardSupported(true);
+    }
+  }, []);
+
+  useEffect(() => {
     let cancelled = false;
 
     const loadProbabilityFn = async () => {
@@ -128,6 +132,18 @@ export function Translator({ ruleString, defaultRandomSeed }) {
       cancelled = true;
     };
   }, [hungerLevel]);
+
+  useEffect(() => {
+    if (successfulCopyCount) {
+      const timeout = setTimeout(() => {
+        setSuccessfulCopyCount(0);
+      }, 2000);
+
+      return () => {
+        clearTimeout(timeout);
+      };
+    }
+  }, [successfulCopyCount]);
 
   return (
     <form className={styles.Translator}>
@@ -181,6 +197,23 @@ export function Translator({ ruleString, defaultRandomSeed }) {
               )
             )}
           </output>
+          {outputString && isClipboardSupported ? (
+            <button
+              className={styles.CopyButton}
+              type="button"
+              aria-label="Copy to clipboard"
+              title="Copy to clipboard"
+              onClick={async (event) => {
+                try {
+                  await navigator.clipboard.writeText(outputString);
+                  setSuccessfulCopyCount((count) => count + 1);
+                } catch (err) {}
+              }}
+            >
+              {successfulCopyCount ? <FaClipboardCheck /> : <RiFileCopy2Line />}{" "}
+              Copy
+            </button>
+          ) : null}
         </div>
       </div>
     </form>

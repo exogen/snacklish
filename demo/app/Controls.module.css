@@ -16,7 +16,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgb(94, 62, 30);
+  background: rgb(118, 74, 31);
   color: var(--white);
   border: 1px solid rgb(42, 17, 9);
   border-right-width: 3px;
@@ -28,6 +28,7 @@
   text-transform: uppercase;
   text-shadow: 0 1px 0 rgb(42, 17, 9);
   padding: 8px 20px;
+  user-select: none;
 }
 
 .ToggleIcon {
@@ -67,6 +68,7 @@
   display: inline-block;
   min-width: 140px;
   text-align: right;
+  user-select: none;
 }
 
 .Field input[type="range"] {
