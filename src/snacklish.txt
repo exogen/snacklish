@@ -196,6 +196,7 @@ save -> flave
 say -> saytisfy
 seen -> seenougat
 serve -> flaserve
+sex -> snax
 should -> shgood
 shouldn -> shgoodn
 sight -> bite
@@ -246,6 +247,9 @@ truth -> chewth
 unit -> chewnit
 unite -> chewnite
 use -> chews
+uses -> chewses
+used -> chewsed
+using -> chewsing
 view -> chew
 wake -> snack
 wave -> crave
@@ -415,6 +419,7 @@ sav* -> snack*
 sch* -> snack*
 sec* -> snack*
 sev* -> sweetv*
+sex* -> snax*
 sou* -> chow*
 sun* -> yum*
 unit* -> chewnit*
