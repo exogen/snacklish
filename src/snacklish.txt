@@ -315,6 +315,7 @@ under* -> hunger*
 *trude -> *chewed
 *writer -> *biter
 
+alco* -> choco*
 bett* -> treat*
 bill* -> fill*
 choo* -> chew*
